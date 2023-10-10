@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Dancing+Script:wght@600&family=Koulen&family=Mochiy+Pop+One&family=Oswald&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 150px;
+    font-family: poppins;
+    /* backdrop-filter: blur(3px); */
+    background-color: #756f6391;
+    position: fixed;
+    z-index: 1;
+}
+
+nav .logos a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+nav .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 60px;
+}
+
+nav .navigation ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+nav .navigation ul li a:hover {
+    color: gold;
+}
+
+nav .user-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav .user-navigation i {
+    color: white;
+}
+
+nav .user-navigation div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 6px 7px;
+    left: 15px;
+    position: relative;
+}
+
+nav .user-navigation div a {
+    text-decoration: none;
+    color: gold;
+}
+
+nav .user-navigation .troll {
+    transform: scale(1.5);
+    position: relative;
+    left: 15px;
+    color: #756f63;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/chocolate.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero h4 {
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 10px;
+}
+
+.hero h1 {
+    font-size: 90px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: dancing script;
+}
+
+.hero h1 span {
+    font-size: 40px;
+}
+
+.hero a {
+    font-family: poppins;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px 50px;
+    border: 1px solid white;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 5px white;
+    transition: ease-in-out .3s;
+    /* transform: scale(1.1); */
+}
+
+.pagebreak {
+    width: 100%;
+    padding: 100px 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pagebreak .left {
+    filter: drop-shadow(10px 15px 5px rgba(0, 0, 0, 0.46));
+}
+
+.pagebreak .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.pagebreak .right h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #756f63;
+}
+
+.pagebreak .right h4 {
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 2px;
+    color: #756f63;
+}
+
+.pagebreak .right h5 {
+    font-size: 15px;
+    text-align: center;
+    font-family: poppins;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    color: #756f63;
+}
+
+.sec-pb {
+    width: 100%;
+    height: 608px;
+    background-image: url(assets/Chocolate\ Animations.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about {
+    width: 100%;
+    height: 85vh;
+    padding: 100px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .right-image {
+    height: 100%;
+    width: 400px;
+    background-image: url(assets/close-up-portrait-man-shirt-mockup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.about .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about .left h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #756f63;
+}
+
+.about .left h4 {
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 2px;
+    color: #756f63;
+}
+
+.third-pb {
+    width: 100%;
+    height: 578px;
+    background-image: url(assets/652168feea9ca6.82322530Processed.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cinzel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-pb h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 5px white;
+}
+
+.third-pb h4 {
+    color: white;
+    font-family: poppins;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-shadow: 0px 0px 5px white;
+    position: relative;
+    top: 20px;
+}
+
+.fourth-pb {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 300px;
+}
+
+.fourth-pb .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    width: 450px;
+}
+
+.fourth-pb .left .first {
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/Cocoa\ Tea\ from\ Grenada\ -\ meat\ loves\ salt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fourth-pb .left .end {
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/Whole\ cocoa\ beans\ featuring\ cocoa\,\ beans\,\ and\ cacao.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fourth-pb .left .first:hover {
+    filter: brightness(70%);
+    transition: ease-in-out .5s;
+    width: 200%;
+}
+
+.fourth-pb .left .end:hover {
+    filter: brightness(70%);
+    transition: ease-in-out .5s;
+    width: 200%;
+}
+
+.fourth-pb .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.fourth-pb .right h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #756f63;
+}
+
+.fourth-pb .right h4 {
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 2px;
+    color: #756f63;
+}
+
+.contact {
+    padding: 100px 300px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9d5ca;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 30px;
+    color: #756f63;
+    letter-spacing: 5px;
+    font-family: cizel;
+    font-weight: 400;
+}
+
+.contact h3 {
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #756f63;
+    line-height: 2em;
+}
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 700px;
+    height: 800px;
+}
+
+.contact form .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contact form .user input {
+    padding: 0px 5px;
+    font-family: poppins;
+    font-size: 15px;
+    height: 50px;
+    width: 400px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.contact form .message {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact form .message textarea {
+    padding: 0px 5px;
+    font-family: poppins;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid black;
+}
+
+.contact form .message button {
+    padding: 8px 15px;
+    font-family: poppins;
+    font-weight: 400;
+    align-self: end;
+    background-color: transparent;
+    border: none;
+    background-color: #756f63;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.footer {
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.424);
+}
+
+.footer .first h1 {
+    font-family: poppins;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.footer .first ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    gap: 30px;
+    line-height: 4em;
+}
+
+.footer .first ul li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.footer .first ul li a i:hover {
+    filter: drop-shadow(0px 0px 5px yellow);
+}
+
+.footer .any h4 {
+    font-family: poppins;
+    filter: drop-shadow(0px 0px 5px black);
+    font-weight: 400;
+}
+
+.footer .any ul {
+    list-style-type: none;
+    line-height: 2em;
+}
+
+.footer .any ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+.footer .any ul li a:hover {
+    position: relative;
+    left: 5px;
+    filter: drop-shadow(0px 0px 5px yellow);
+}
+
+.footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+    background-image: url(assets/Group\ 6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 25px;
+    filter: drop-shadow(0px 0px 10px black);
+    animation: goyang 7s infinite;
+}
+
+@keyframes goyang {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.copyright {
+    background-color: rgba(0, 0, 0, 0.424);
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright h5 {
+    font-size: larger;
+    font-family: poppins;
+    background-color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+}
